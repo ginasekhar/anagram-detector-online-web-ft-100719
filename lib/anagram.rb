@@ -7,7 +7,7 @@ class Anagram
   end #initialize
   
   def match(possible_anagrams)
-    same_length_anagrams = 
+    same_length_anagrams = possible_anagrams.find_all
   end
   
 end #Anagram
