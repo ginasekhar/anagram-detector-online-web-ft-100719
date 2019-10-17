@@ -15,10 +15,10 @@ class Anagram
       if sorted_anagram == sorted_original_word
         match_list << word_to_match
       end #if
-    end
+    end # each
       
+    match_list
     
-    
-  end
+  end#match
   
 end #Anagram
