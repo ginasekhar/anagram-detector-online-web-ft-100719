@@ -7,7 +7,9 @@ class Anagram
   end #initialize
   
   def match(possible_anagrams)
-    same_length_anagrams = possible_anagrams.find_all
+    same_length_anagrams = { this_word: possible_anagrams.find_all {| word| word.length == @word.length}, word_sorted: 
+    
+    
   end
   
 end #Anagram
