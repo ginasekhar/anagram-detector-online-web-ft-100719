@@ -6,6 +6,8 @@ class Anagram
     @word = word
   end #initialize
   
-  def match()
+  def match(possible_anagrams)
+    
+  end
   
 end #Anagram
