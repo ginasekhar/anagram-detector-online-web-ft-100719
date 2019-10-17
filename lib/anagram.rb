@@ -7,12 +7,15 @@ class Anagram
   end #initialize
   
   def match(possible_anagrams)
-    sorted_original_word = split(word).sort.join
+    sorted_original_word = split(@word).sort.join
     match_list = []
     same_length_anagrams = possible_anagrams.find_all {| word| word.length == @word.length}
     same_length_anagrams.each do |word_to_match|
       sorted_anagram = split(word_to_match).sort.join
-      if 
+      if sorted_anagram == sorted_original_word
+        match_list << word_to_match
+      end #if
+    end
       
     
     
